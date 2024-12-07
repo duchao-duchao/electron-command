@@ -2,15 +2,53 @@
   "name": "electron-command",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "./main.js",
   "scripts": {
-    "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "electron": "electron .",
+    "package": "electron-builder"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^33.2.1"
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-scripts": "^5.0.1"
+  },
+  "build": {
+    "appId": "com.dc.command.manager",
+    "productName": "D-Command",
+    "mac": {
+      "target": "dmg"
+    },
+    "directories": {
+      "output": "dist"
+    },
+    "extends": null,
+    "files": [
+      "main.js",
+      "preload.js",
+      "package.json",
+      "node_modules/**/*",
+      "build/**/*"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

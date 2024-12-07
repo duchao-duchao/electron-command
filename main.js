@@ -2,7 +2,9 @@
 
 // Modules to control application life and create native browser window
 const { app, BrowserWindow } = require('electron')
+const { log } = require('node:console')
 const path = require('node:path')
+const url = require('url');
 
 const createWindow = () => {
   // Create the browser window.
@@ -13,9 +15,9 @@ const createWindow = () => {
       preload: path.join(__dirname, 'preload.js')
     }
   })
-
-  // 加载 index.html
-  mainWindow.loadFile('./index.html')
+  // 在打包后，加载构建好的静态文件
+  mainWindow.loadURL(`file://${__dirname}/build/index.html`);  // 加载静态文件
+  //   mainWindow.loadURL('http://localhost:3000');  // 开发阶段加载开发服务器
 
   // 打开开发工具
   // mainWindow.webContents.openDevTools()
