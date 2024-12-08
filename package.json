@@ -4,8 +4,6 @@
   "description": "",
   "main": "./main.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
     "electron": "electron .",
     "package": "electron-builder"
   },
@@ -17,6 +15,7 @@
     "electron-builder": "^25.1.8"
   },
   "dependencies": {
+    "antd": "4.24.12",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-scripts": "^5.0.1"
