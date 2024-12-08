@@ -1,3 +1,6 @@
+html {
+    color: #585a5a;
+}
 .search {
     height: 80px;
     :global {
@@ -26,11 +29,48 @@
     margin: 30px auto;
     width: 80%;
     flex-direction: column;
+    height: calc(100vh - 200px);
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
+.commandList::-webkit-scrollbar {
+    display: none;
+  }
 
 .commandItem {
-    display: flex;
-    >span {
-        flex: 1;
+    border: 1px solid #E7E9E8;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    .commandItemTitle {
+        height: 38px;
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 16px;
+        align-items: center;
+        border-bottom: 1px solid #E7E9E8;
+        .copy {
+            color: #585a5a;
+            cursor: pointer;
+            width: 68px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            height: 30px;
+            margin-left: 8px;
+        }
+        .copy:hover {
+            background-color: #e7e9e8;
+        }
+    }
+
+    .commandCode {
+        height: 38px;
+        background-color: #fafafa;
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+        color: #262626;
     }
 }

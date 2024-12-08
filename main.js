@@ -7,6 +7,7 @@ const createWindow = () => {
     width: 800,
     height: 600,
     webPreferences: {
+      sandbox: false,
       preload: path.join(__dirname, 'preload.js')
     }
   })
@@ -15,7 +16,7 @@ const createWindow = () => {
     mainWindow.loadURL('http://localhost:8000');  // 开发阶段加载开发服务器
 
   // 打开开发工具
-  // mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools()
 }
 
 // 这段程序将会在 Electron 结束初始化
