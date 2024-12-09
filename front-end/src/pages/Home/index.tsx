@@ -30,10 +30,14 @@ export default function HomePage() {
     }
   }
 
+  const handleChange = (event) => {
+    setShowList(list.filter((i)=>i.command.includes(event.target.value) || i.description.includes(event.target.value)))
+  }
+
   return (
     <div>
       <div style={{display: 'flex', margin: '30px auto', width: '80%'}}>
-        <Input style={{height: 50}} placeholder='请搜索' onKeyDown={handleEnter} />
+        <Input style={{height: 50}} placeholder='请搜索' onChange={handleChange} onKeyDown={handleEnter} />
         <Button
           onClick={() => {
             form.resetFields()
