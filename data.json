@@ -1,1 +1,160 @@
-{"commandList":[{"command":"add","description":"add"},{"command":"11","description":"2"},{"command":"2","description":"2"},{"command":"3","description":"2"},{"command":"4","description":"2"},{"command":"5","description":"2"},{"command":"6","description":"2"},{"command":"7","description":"2"},{"command":"8","description":"2"},{"command":"9","description":"2"},{"command":"10","description":"2"}]}
+{
+    "commandList": [
+      {
+        "command": "ls",
+        "description": "列出文件目录"
+      },
+      {
+        "command": "cd",
+        "description": "更改当前目录"
+      },
+      {
+        "command": "pwd",
+        "description": "显示当前工作目录的完整路径"
+      },
+      {
+        "command": "mkdir",
+        "description": "创建新目录"
+      },
+      {
+        "command": "rmdir",
+        "description": "删除空目录"
+      },
+      {
+        "command": "rm",
+        "description": "删除文件或目录"
+      },
+      {
+        "command": "cp",
+        "description": "复制文件或目录"
+      },
+      {
+        "command": "mv",
+        "description": "移动或重命名文件或目录"
+      },
+      {
+        "command": "touch",
+        "description": "创建空文件或更新文件时间戳"
+      },
+      {
+        "command": "cat",
+        "description": "查看文件内容"
+      },
+      {
+        "command": "more",
+        "description": "逐屏显示文件内容"
+      },
+      {
+        "command": "less",
+        "description": "逐屏显示文件内容，可向上向下翻页"
+      },
+      {
+        "command": "head",
+        "description": "查看文件的前几行"
+      },
+      {
+        "command": "tail",
+        "description": "查看文件的后几行"
+      },
+      {
+        "command": "grep",
+        "description": "搜索文本内容"
+      },
+      {
+        "command": "find",
+        "description": "查找文件和目录"
+      },
+      {
+        "command": "chmod",
+        "description": "更改文件或目录的权限"
+      },
+      {
+        "command": "chown",
+        "description": "更改文件或目录的所有者"
+      },
+      {
+        "command": "tar",
+        "description": "打包和压缩文件"
+      },
+      {
+        "command": "zip",
+        "description": "压缩文件"
+      },
+      {
+        "command": "unzip",
+        "description": "解压文件"
+      },
+      {
+        "command": "wget",
+        "description": "从网络下载文件"
+      },
+      {
+        "command": "curl",
+        "description": "传输数据"
+      },
+      {
+        "command": "ssh",
+        "description": "安全远程登录"
+      },
+      {
+        "command": "scp",
+        "description": "安全复制文件"
+      },
+      {
+        "command": "ps",
+        "description": "显示当前进程状态"
+      },
+      {
+        "command": "top",
+        "description": "显示系统进程的动态实时视图"
+      },
+      {
+        "command": "kill",
+        "description": "发送信号到进程"
+      },
+      {
+        "command": "df",
+        "description": "显示磁盘空间使用情况"
+      },
+      {
+        "command": "du",
+        "description": "估算文件或目录的磁盘使用空间"
+      },
+      {
+        "command": "free",
+        "description": "显示内存使用情况"
+      },
+      {
+        "command": "ifconfig",
+        "description": "配置或显示 Linux 内核中网络接口的网络参数"
+      },
+      {
+        "command": "netstat",
+        "description": "显示网络状态"
+      },
+      {
+        "command": "ping",
+        "description": "测试主机间的网络连接"
+      },
+      {
+        "command": "traceroute",
+        "description": "追踪数据包的路由路径"
+      },
+      {
+        "command": "iptables",
+        "description": "管理网络防火墙规则"
+      },
+      {
+        "command": "crontab",
+        "description": "设置计划任务"
+      },
+      {
+        "command": "history",
+        "description": "查看命令历史"
+      },
+      {
+        "command": "man",
+        "description": "查看用户手册"
+      }
+    ]
+  }
